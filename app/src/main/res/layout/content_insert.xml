@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mike.friendcontactmanager.InsertActivity"
+    tools:showIn="@layout/activity_insert">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <!-- First name Table Row !-->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_name_text_view"
+                android:padding="8dp"
+                android:text="@string/label_first_name_text_view" />
+
+            <EditText
+
+                android:id="@+id/insert_first_name_edit_text"
+                android:hint="@string/first_name_edit_text_hint"
+                android:inputType="textPersonName"/>
+
+
+        </TableRow>
+
+        <!-- Last name Table Row !-->
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_price_text_view"
+                android:hint="@string/label_last_name_text_view"
+                android:padding="8dp" />
+
+            <EditText
+
+                android:id="@+id/insert_last_name_edit_text"
+                android:hint="@string/last_name_edit_text_hint"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+
+        <!-- Email table row -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_email_input_text_view"
+                android:hint="@string/label_email_text_view"
+                android:padding="8dp" />
+
+            <EditText
+
+                android:id="@+id/insert_email_edit_text"
+                android:hint="@string/email_address_edit_text_hint"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <!-- Interest Rate Table Row !-->
+
+
+        <View
+            android:layout_height="5dp"
+            android:background="@color/colorAccent" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:text="@string/button_add"
+                android:onClick="insert"/>
+
+            <Button android:text="@string/button_back"
+                android:onClick="goBack"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
